@@ -12,7 +12,6 @@ config openclash 'config'
 	option auto_update '0'
 	option auto_update_time '0'
 	option cn_port '9090'
-	option dashboard_password '123456'
 	option dashboard_forward_ssl '0'
 	option rule_source '0'
 	option enable_custom_dns '0'
@@ -68,222 +67,18 @@ config openclash 'config'
 	
 config dns_servers
 	option type 'udp'
-	option ip '114.114.114.114'
-	option enabled '1'
-	option group 'default'
-
-config dns_servers
-	option type 'udp'
-	option ip '119.29.29.29'
-	option enabled '1'
+	option ip '192.168.1.240'
+	option enabled '0'
 	option group 'default'
 
 config dns_servers
 	option group 'nameserver'
 	option type 'udp'
-	option ip '114.114.114.114'
-	option enabled '1'
+	option ip '192.168.1.240'
+	option enabled '0'
 
 config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip '192.168.1.240'
 	option type 'udp'
-	option ip '223.5.5.5'
-	option enabled '1'
-	option group 'default'
-
-config dns_servers
-	option group 'nameserver'
-	option type 'udp'
-	option ip '119.29.29.29'
-	option enabled '1'
-
-config dns_servers
-	option group 'nameserver'
-	option type 'udp'
-	option ip '119.28.28.28'
-	option enabled '0'
-
-config dns_servers
-	option group 'nameserver'
-	option type 'udp'
-	option ip '223.5.5.5'
-	option enabled '0'
-
-config dns_servers
-	option type 'https'
-	option ip 'doh.pub/dns-query'
-	option group 'nameserver'
-	option enabled '1'
-
-config dns_servers
-	option type 'https'
-	option ip 'dns.alidns.com/dns-query'
-	option group 'nameserver'
-	option enabled '1'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip '9.9.9.9'
-	option type 'udp'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip '149.112.112.112'
-	option type 'udp'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip '2620:fe::fe'
-	option type 'udp'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip '2620:fe::9'
-	option type 'udp'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip '8.8.8.8'
-	option type 'udp'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip '8.8.4.4'
-	option type 'udp'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip '2001:4860:4860::8888'
-	option type 'udp'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip '2001:4860:4860::8844'
-	option type 'udp'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip '2001:da8::666'
-	option type 'udp'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip 'dns.quad9.net'
-	option type 'tls'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip 'dns.google'
-	option type 'tls'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip '1.1.1.1'
-	option type 'tls'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip 'jp.tiar.app'
-	option type 'tls'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip 'dot.tiar.app'
-	option type 'tls'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip 'dns.quad9.net/dns-query'
-	option type 'https'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip 'dns.google/dns-query'
-	option type 'https'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip 'dns.cloudflare.com/dns-query'
-	option type 'https'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip '1.1.1.1/dns-query'
-	option type 'https'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip 'public.dns.iij.jp/dns-query'
-	option type 'https'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip 'jp.tiar.app/dns-query'
-	option type 'https'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip 'jp.tiarap.org/dns-query'
-	option type 'https'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option type 'https'
-	option ip 'doh.dnslify.com/dns-query'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip 'dns.twnic.tw/dns-query'
-	option type 'https'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip 'dns.oszx.co/dns-query'
-	option type 'https'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip 'doh.applied-privacy.net/query'
-	option type 'https'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip 'dnsforge.de/dns-query'
-	option type 'https'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip 'doh.ffmuc.net/dns-query'
-	option type 'https'
-
-config dns_servers
-	option enabled '0'
-	option group 'fallback'
-	option ip 'doh.mullvad.net/dns-query'
-	option type 'https'
